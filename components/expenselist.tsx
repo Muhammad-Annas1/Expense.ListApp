@@ -36,8 +36,8 @@ const ExpenseList: React.FC = () => {
   };
 
   return (
-    <div className="p-4 bg-[url('/bg-image.jpg')] h-screen max-w-screen bg-center bg-cover">
-      <Card className="mb-6">
+    <div className="p-4 bg-teal-100 max-h-full max-w-screen bg-center bg-cover">
+      <Card className="mb-6 border-2 border-gray-600 rounded-md">
         <CardHeader>
           <CardTitle className="text-xl font-bold">Add New Expense</CardTitle>
         </CardHeader>
@@ -48,7 +48,7 @@ const ExpenseList: React.FC = () => {
             placeholder="Description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="border p-2 rounded mb-2 w-full"
+            className="border p-2 rounded mb-2 w-full "
           />
 
           <input
@@ -64,7 +64,7 @@ const ExpenseList: React.FC = () => {
         </CardContent>
       </Card>
 
-      <Card className="border-2 border-gray-300 rounded-md">
+      <Card className="border-2 border-gray-600 rounded-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold">Expense List</CardTitle>
           <CardDescription className="text-lg">List Of Expenses</CardDescription>
